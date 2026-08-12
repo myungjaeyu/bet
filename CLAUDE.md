@@ -1,6 +1,6 @@
 # bet
 
-스포츠 픽/베팅 서비스. 각각 독립 배포되는 두 개의 저장소로 구성:
+각각 독립 배포되는 두 개의 저장소로 구성:
 
 - **bet-api** — NestJS + TypeORM 백엔드. MySQL DB, 인증(JWT), 베팅/지갑
   로직, wisetoto/betman 경기 데이터 크롤러, 이메일/S3를 담당.
