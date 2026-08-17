@@ -3,7 +3,7 @@
 각각 독립 배포되는 두 개의 저장소로 구성:
 
 - **bet-api** — NestJS + TypeORM 백엔드. MySQL DB, 인증(JWT), 베팅/지갑
-  로직, wisetoto/betman 경기 데이터 크롤러, 이메일/S3를 담당.
+  로직, wisetoto 경기/전적 데이터 크롤러, 예측픽 봇, 이메일/S3를 담당.
 - **bet-client** — Next.js (App Router) 프론트엔드. BFF 역할을 함: 
   `src/app/api/**/route.ts` 핸들러가 `lib/bet-api-client.ts`를 통해
   bet-api로 프록시하고, 세션을 httpOnly 쿠키로 보관 — 브라우저는 JWT를
